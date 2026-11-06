@@ -65,21 +65,21 @@ class MainApp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 13),
-              Container(
-                width: double.infinity,
-                padding: EdgeInsets.all(16),
-                color: const Color.fromARGB(255, 209, 245, 168),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text('Rencana Kunjungan',
+              const Text('Rencana Kunjungan',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
                         color:  Color.fromARGB(255, 54, 160, 57),
                       ),
                     ),
-                    const SizedBox(height: 13),
+              const SizedBox(height: 13),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(16),
+                color: const Color.fromARGB(255, 253, 255, 250),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
                     Row(children: [
                         Icon(Icons.location_on,color:  Color.fromARGB(255, 54, 160, 57),size: 16),
                         SizedBox(width: 6),
@@ -110,7 +110,16 @@ class MainApp extends StatelessWidget {
                 ),
               ),
             const SizedBox(height: 13),
-            SizedBox()  
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(onPressed: (){},icon: const Icon(Icons.directions_walk) ,label: Text("Rencana Kunjungan"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 54, 160, 57),
+                foregroundColor: Colors.white,
+                padding: EdgeInsets.all(14)
+                  ),
+                ),
+              )  
             ],
           ),
         )
